@@ -8,7 +8,7 @@ A/B Testing with Firebase Remote Config and Firebase Analytics code guideline fo
 * google-services.json in app-level folder
 
 ## Features
-* Fetch experiment param from Firebase Remote Config (50:50 percentiles in conditions) and switch to show bubbles.
+* Fetch param from Firebase Remote Config (50:50 percentiles in conditions) and switch to show bubbles.
 * Set user properties to Firebase Analytics (MyExperiment)
 * Log events to Firebase Analytics when user click on the bubble
 
