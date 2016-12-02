@@ -21,4 +21,4 @@ A/B Testing with Firebase Remote Config and Firebase Analytics code guideline fo
 </table>
 
 ## Blog
-[A/B Testing with Firebase Remote Config and Firebase Analytics](https://medium.com/@jirawatee/)
+[A/B Testing with Firebase Remote Config and Firebase Analytics](https://medium.com/@jirawatee/ทำ-a-b-testing-กับแอพของคุณด้วย-firebase-remote-config-และ-firebase-analytics-3f12329b0b97#.l5on9bqsn)
