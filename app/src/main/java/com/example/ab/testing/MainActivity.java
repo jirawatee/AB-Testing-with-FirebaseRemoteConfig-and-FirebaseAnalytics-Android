@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity{
 			public void onComplete(@NonNull Task<Void> task) {
 				if (task.isSuccessful()) {
 					mFirebaseRemoteConfig.activateFetched();
-					experiment1_variant = FirebaseRemoteConfig.getInstance().getString("experiment1");
+					experiment1_variant = mFirebaseRemoteConfig.getString("experiment1");
 					mFirebaseAnalytics.setUserProperty("MyExperiment", experiment1_variant);
 
 					if ("Top".equals(experiment1_variant)) {
