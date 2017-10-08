@@ -2,10 +2,10 @@ apply plugin: 'com.android.application'
 
 android {
 	compileSdkVersion compileAndTargetSdk
-	buildToolsVersion '26.0.1'
+	buildToolsVersion '26.0.2'
 	defaultConfig {
 		applicationId "com.example.ab.testing"
-		minSdkVersion 25
+		minSdkVersion 26
 		targetSdkVersion compileAndTargetSdk
 		versionCode 1
 		versionName "1.0"
@@ -29,9 +29,9 @@ android {
 }
 
 dependencies {
-	compile "com.android.support:appcompat-v7:$supportLibraryVersion"
-	compile "com.google.firebase:firebase-core:$firebaseLibraryVersion"
-	compile "com.google.firebase:firebase-config:$firebaseLibraryVersion"
+	implementation "com.android.support:appcompat-v7:$supportLibraryVersion"
+	implementation "com.google.firebase:firebase-core:$firebaseLibraryVersion"
+	implementation "com.google.firebase:firebase-config:$firebaseLibraryVersion"
 }
 
 apply plugin: 'com.google.gms.google-services'
