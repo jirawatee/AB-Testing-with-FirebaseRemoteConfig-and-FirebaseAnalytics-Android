@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity{
 	}
 
 	private void bindWidget() {
-		bubbleTop = (TextView) findViewById(R.id.bubble_top);
-		bubbleBottom = (TextView) findViewById(R.id.bubble_bottom);
+		bubbleTop = findViewById(R.id.bubble_top);
+		bubbleBottom = findViewById(R.id.bubble_bottom);
 	}
 
 	private void fetchData() {
