@@ -2,18 +2,21 @@ apply plugin: 'com.android.application'
 
 android {
 	compileSdkVersion compileAndTargetSdk
-	buildToolsVersion '26.0.2'
+	buildToolsVersion '27.0.3'
+
 	defaultConfig {
 		applicationId "com.example.ab.testing"
-		minSdkVersion 26
+		minSdkVersion 27
 		targetSdkVersion compileAndTargetSdk
 		versionCode 1
 		versionName "1.0"
 		resConfigs('en', 'xxxhdpi')
 	}
+
 	buildTypes {
 		release {
 			minifyEnabled true
+			shrinkResources true
 			proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 		}
 		debug {
@@ -22,6 +25,7 @@ android {
 			aaptOptions.cruncherEnabled = false
 		}
 	}
+
 	dexOptions {
 		preDexLibraries true
 		maxProcessCount 8
@@ -29,7 +33,9 @@ android {
 }
 
 dependencies {
-	implementation "com.android.support:appcompat-v7:$supportLibraryVersion"
+	implementation ("com.android.support:appcompat-v7:$supportLibraryVersion") {
+		force = true
+	}
 	implementation "com.google.firebase:firebase-core:$firebaseLibraryVersion"
 	implementation "com.google.firebase:firebase-config:$firebaseLibraryVersion"
 }
